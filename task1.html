@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #container{
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(161, 2, 71);
+            height: 100vh;
+        }
+        button{
+            width:115px;
+            height:45px;
+            border-radius:7px;
+            margin:10px;
+            cursor: pointer;
+        }
+        #eat{
+            background-color: rgb(201, 13, 44);
+            color:white
+        }
+        #play{
+             background-color: rgb(22, 13, 199);
+            color:white
+        }
+        #sleep{
+             background-color: rgb(212, 8, 127);
+            color:white
+        }
+        img{
+            width:400px;
+            height:400px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img id="dog_image" src="https://media.tenor.com/H4o7KBBlIlQAAAAm/happy-tail-happy-dog.webp"/>
+        <div>
+            <button id="eat" onclick="dogactivity('https://media.tenor.com/aDcIkiR86cQAAAAi/pawsum-playpawsum.gif')">Eat</button>
+            <button id="play" onclick="dogactivity('https://media.tenor.com/fjFefVXbjosAAAAM/funny-dog-dance-dancing-dog.gif')">Play</button>
+            <button id="sleep" onclick="dogactivity('https://media1.tenor.com/m/KNK3P4nmoDoAAAAC/dog-bed.gif')"">Sleep</button>
+        </div>
+    </div>
+
+  <script>
+    function dogactivity(url){
+        //getElementById 
+        let a=document.getElementById('dog_image')
+        a.src=url
+    }
+
+     </script>
+</body>
+
+</html>
